@@ -34,6 +34,7 @@ class Viewer extends Component {
           <span>{`(@${viewer.login})`}</span>
         </h1>
         <User user={viewer} />
+        <hr />
         <h2>{viewer.name}'s followers:</h2>
         <UserList users={viewer.followers.nodes} />
       </div>
