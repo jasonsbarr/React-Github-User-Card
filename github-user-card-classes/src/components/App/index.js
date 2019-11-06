@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
-import UserList from '../UserList';
+import React, { Component } from "react";
+import { ApolloConsumer } from "react-apollo";
+import Viewer from "../Viewer";
 
 class App extends Component {
-
   render() {
-    return(
-      <div>
-        <UserList />
-      </div>
+    return (
+      <ApolloConsumer>
+        {client => <Viewer client={client} />}
+      </ApolloConsumer>
     );
   }
 }
