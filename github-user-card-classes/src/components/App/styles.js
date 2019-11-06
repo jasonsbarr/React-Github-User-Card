@@ -12,8 +12,8 @@ const styles = css`
     "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
     "Helvetica Neue", Arial, sans-serif;
   margin: 1.5rem auto;
-  max-width: 1080px;
-  padding: 1.5rem 2.5rem;
+  max-width: 820px;
+  padding: 1.5rem 3rem;
   width: 90%;
 
   h1,
