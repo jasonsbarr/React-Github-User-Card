@@ -14,34 +14,7 @@ class Viewer extends Component {
 
     client
       .query({
-        query: gql`
-          query {
-            viewer {
-              id
-              login
-              bio
-              company
-              createdAt
-              email
-              name
-              avatarUrl
-              resourcePath
-              followers(last: 10) {
-                nodes {
-                  id
-                  login
-                  bio
-                  company
-                  createdAt
-                  email
-                  name
-                  avatarUrl
-                  resourcePath
-                }
-              }
-            }
-          }
-        `,
+        query,
       })
       .then(response =>
         this.setState({
