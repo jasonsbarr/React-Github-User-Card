@@ -1,15 +1,8 @@
-import React, { Component } from 'react';
+import React from "react";
+import User from "../User";
 
-class UserList extends Component {
-  state = { users: [] };
-
-  render() {
-    return(
-      <div>
-        Hello from UserList!
-      </div>
-    );
-  }
-}
+const UserList = ({ users }) => {
+  return users.map(user => <User key={user.id} user={user} />);
+};
 
 export default UserList;
